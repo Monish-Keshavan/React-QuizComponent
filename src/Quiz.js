@@ -13,10 +13,10 @@ class Quiz extends React.Component{
     render(){
         return(
             <div>
-                <div className='QuizQuestion'><QuizQuestion /></div>
+                <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position-1]} />
             </div>
         )
     }
 }
 
-export default Quiz;
+export default Quiz
