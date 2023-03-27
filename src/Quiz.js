@@ -12,11 +12,7 @@ class Quiz extends React.Component{
     render(){
         return(
             <div>
-                {quizData.map(user =>(
-                     <div className='QuizQuestion'>
-                     {user.instruction_text}
-                    </div>
-                ))}
+                <div className='QuizQuestion'>{quizData.quiz_questions[0].instruction_text}</div>
             </div>
         )
     }
